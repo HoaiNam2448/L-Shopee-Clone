@@ -71,7 +71,7 @@
     border-radius: 5px;
     z-index: 1;
     animation: fadeIn .2s ease-in;
-    box-shadow: ;
+    
 }
 .header__qr::before{
     content: "";
@@ -105,4 +105,102 @@
     to {
         opacity: 1;
     }
+}
+.header_navbar-item:hover .header_notify{
+    display: block;
+}
+/* Header notify  */
+.header_notify{
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    background-color: var(--white-color);
+    width: 400px;
+    border-radius: 2px;
+    border: 1px solid #FB9086;
+    animation: fadeIn 0.2s ease-in;
+}
+.header_notify::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-width: 12px 15px;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom-color: #fff;
+    right: 13px;
+    top: -24px;
+}
+.header_notify::after{
+    position: absolute;
+    content: "";
+    display: block;
+    height: 14px;
+    width: 100px;
+    background-color: transparent;
+    top: -14px;
+    right: 0;
+}
+.header_nav{
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 40px;
+    margin: 0 12px;
+    text-transform: capitalize;
+    height: 40px;
+    color: #818181;
+    cursor:pointer;
+
+}
+
+.header_notify-list{
+    padding-left: 0;
+    
+}
+.header_notify-item{
+    list-style: none;
+   
+}
+.header_notify-link{
+   display: flex;
+   background-color: #fff1f0;
+   padding: 8px;
+   text-decoration: none;
+}
+.header_notify-body-img{
+    width: 46px;
+    object-fit: contain;
+    align-self: start;
+}
+.header_notify-body-describer{
+    margin: 0 12px;
+}
+.header_notify-body-describer-header{
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #000;
+    margin: 2px 0;
+    text-align: justify;
+    
+}
+.header_notify-body-describer-footer{
+    display: block;
+    font-size: 1.2rem;
+    color: #818181;
+    text-align: justify;
+
+    
+}
+.header_footer {
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 40px;
+    margin: 0 12px;
+    text-transform: capitalize;
+    height: 40px;
+    color: #818181;
+    cursor:pointer;
+    text-align: center;
 }
