@@ -12,6 +12,7 @@ html {
     line-height: 16px;
     font-family: 'Roboto',sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 /*1. */
 .grid{
@@ -30,3 +31,27 @@ html {
 }
 /*  */
 /* End dung base  */
+/* Modal */
+.modal{
+    position: fixed;
+    display: flex;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+}
+.modal__overplay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.modal__body{
+    position: relative;
+    margin: auto;
+    background-color: var(--white-color);
+}
+.modal__inner{
+
+}
